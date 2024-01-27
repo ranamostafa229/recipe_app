@@ -25,6 +25,10 @@ To install and run this project, you need to have [Node.js](https://docs.github.
 3. Create a `.env` file in the root directory and add your API key and ID from [Edamam] as `REACT_APP_API_KEY` and `REACT_APP_API_ID` respectively.
 4. Run `npm start` to start the development server.
 5. Open your browser and go to `http://localhost:3000` to see the app.
+
+## Demo
+
+You can view a live demo of the app here: [https://thatix.netlify.app/](https://thatix.netlify.app/)
    
 ## Contact
 
