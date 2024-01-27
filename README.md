@@ -8,15 +8,15 @@ This project is a web application that allows users to search for recipes by ing
 
 ## Usage
 
-The app has a simple and user-friendly interface. On the homepage, you can see an into, and the latest recipes.
+### The app has a simple and user-friendly interface. On the homepage, you can see an into, and the latest recipes.
 
 ![Screenshot of the homepage](https://github.com/ranamostafa229/real_estate_app/assets/57458722/c7faae54-3609-4d4a-9fd0-f62f85b355f3)  ![Screenshot of the homepage](https://github.com/ranamostafa229/real_estate_app/assets/57458722/2900bc7d-24ea-4480-bcd9-6b1ac8360b99)
 
-On the Browse page, you can see a search bar where you can enter your query. You can also use the filters to narrow down your search by cuisine, or meal type.
+### On the Browse page, you can see a search bar where you can enter your query. You can also use the filters to narrow down your search by cuisine, or meal type.
 
 ![Screenshot of the Browse page](https://github.com/ranamostafa229/real_estate_app/assets/57458722/b101ac98-9fc1-4caa-871b-9b54928a9797)
 
-When you click on a recipe, you will see a detailed page with more information, such as the calories, servings, cooking time, ingredients, and instructions. You can also see the recommendations based on the selected recipe.
+### When you click on a recipe, you will see a detailed page with more information, such as the calories, servings, cooking time, ingredients, and instructions. You can also see the recommendations based on the selected recipe.
 
 ![Screenshot of the detail page](https://github.com/ranamostafa229/real_estate_app/assets/57458722/b484fa2a-c91b-448d-9e1d-76e3643b6255)
 ![Screenshot of recommendations)](https://github.com/ranamostafa229/real_estate_app/assets/57458722/52a87cb4-9704-4d0e-97f8-61aa72af4171)
