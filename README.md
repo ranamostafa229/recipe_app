@@ -14,6 +14,8 @@ The app has a simple and user-friendly interface. On the homepage, you can see a
 
 On the Browse page, you can see a search bar where you can enter your query. You can also use the filters to narrow down your search by cuisine, or meal type.
 
+![Screenshot of the Browse page](https://github.com/ranamostafa229/real_estate_app/assets/57458722/b101ac98-9fc1-4caa-871b-9b54928a9797)
+
 When you click on a recipe, you will see a detailed page with more information, such as the calories, servings, cooking time, ingredients, and instructions. You can also save the recipe to your favorites, or share it with others.
 
 ![Screenshot of the detail page]
