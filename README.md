@@ -23,7 +23,7 @@
 
 ## Installation
 
-To install and run this project, you need to have [Node.js](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github) and [npm](https://docs.github.com/articles/markdown-basics) installed on your machine. Then, follow these steps:
+To install and run this project, you need to have [Node.js](https://nodejs.org/en/download) and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed on your machine. Then, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Navigate to the project folder and run `npm install` to install the dependencies.
