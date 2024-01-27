@@ -1,10 +1,10 @@
 # Recipe App
 
-A React recipe app that uses an API for searching and viewing recipes.
+#### A React recipe app that uses an API for searching and viewing recipes.
 
 ## Description
 
-This project is a web application that allows users to search for recipes by ingredients, cuisine, diet, or meal type. Users can also view the details, ingredients, and instructions of each recipe. The project uses React for the front-end, [Edamam Recipe Search API](https://developer.edamam.com/edamam-recipe-api) for the back-end, and Tailwind CSS for styling.
+#### This project is a web application that allows users to search for recipes by ingredients, cuisine, diet, or meal type. Users can also view the details, ingredients, and instructions of each recipe. The project uses React for the front-end, [Edamam Recipe Search API](https://developer.edamam.com/edamam-recipe-api) for the back-end, and Tailwind CSS for styling.
 
 ## Usage
 
