@@ -8,9 +8,11 @@ This project is a web application that allows users to search for recipes by ing
 
 ## Usage
 
-The app has a simple and user-friendly interface. On the homepage, you can see a search bar where you can enter your query. You can also use the filters to narrow down your search by cuisine, diet, or meal type.
+The app has a simple and user-friendly interface. On the homepage, you can see an into, and the latest recipes.
 
-![Screenshot of the homepage]
+![Screenshot of the homepage](https://github.com/ranamostafa229/real_estate_app/assets/57458722/c7faae54-3609-4d4a-9fd0-f62f85b355f3)  ![Screenshot of the homepage](https://github.com/ranamostafa229/real_estate_app/assets/57458722/2900bc7d-24ea-4480-bcd9-6b1ac8360b99)
+
+On the Browse page, you can see a search bar where you can enter your query. You can also use the filters to narrow down your search by cuisine, or meal type.
 
 When you click on a recipe, you will see a detailed page with more information, such as the calories, servings, cooking time, ingredients, and instructions. You can also save the recipe to your favorites, or share it with others.
 
