@@ -40,4 +40,4 @@ You can view a live demo of the app here: [https://thatix.netlify.app/](https://
 If you have any questions, suggestions, or feedback, you can contact me at:
 
 - Email: ranamostafa229@gmail.com
-- LinkedIn: [Rana Mostafa]
+- LinkedIn: <a href='https://www.linkedin.com/in/rana-shams-4589b5218'>https://www.linkedin.com/in/rana-shams-4589b5218</a>
