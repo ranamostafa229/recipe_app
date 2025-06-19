@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Recipe App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### A React recipe app that uses an API for searching and viewing recipes.
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+#### This project is a web application that allows users to search for recipes by ingredients, cuisine, diet, or meal type. Users can also view the details, ingredients, and instructions of each recipe. The project uses React for the front-end, [Edamam Recipe Search API](https://developer.edamam.com/edamam-recipe-api) for the back-end, and Tailwind CSS for styling.
 
-### `npm start`
+## Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The app has a simple and user-friendly interface. On the homepage, you can see an into, and the latest recipes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Screenshot of the homepage](https://github.com/ranamostafa229/real_estate_app/assets/57458722/c7faae54-3609-4d4a-9fd0-f62f85b355f3)  ![Screenshot of the homepage](https://github.com/ranamostafa229/real_estate_app/assets/57458722/2900bc7d-24ea-4480-bcd9-6b1ac8360b99)
 
-### `npm test`
+### On the Browse page, you can see a search bar where you can enter your query. You can also use the filters to narrow down your search by cuisine, or meal type.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Screenshot of the Browse page](https://github.com/ranamostafa229/real_estate_app/assets/57458722/b101ac98-9fc1-4caa-871b-9b54928a9797)
 
-### `npm run build`
+### When you click on a recipe, you will see a detailed page with more information, such as the calories, servings, cooking time, ingredients, and instructions. You can also see the recommendations based on the selected recipe.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot of the detail page](https://github.com/ranamostafa229/real_estate_app/assets/57458722/b484fa2a-c91b-448d-9e1d-76e3643b6255)
+![Screenshot of recommendations)](https://github.com/ranamostafa229/real_estate_app/assets/57458722/52a87cb4-9704-4d0e-97f8-61aa72af4171)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To install and run this project, you need to have [Node.js](https://nodejs.org/en/download) and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed on your machine. Then, follow these steps:
 
-### `npm run eject`
+1. Clone this repository to your local machine.
+2. Navigate to the project folder and run `npm install` to install the dependencies.
+3. Create a `.env` file in the root directory and add your API key and ID from [Edamam] as `REACT_APP_API_KEY` and `REACT_APP_API_ID` respectively.
+4. Run `npm start` to start the development server.
+5. Open your browser and go to `http://localhost:3000` to see the app.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Demo
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+You can view a live demo of the app here: [https://thatix.netlify.app/](https://thatix.netlify.app/)
+   
+## Contact
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+If you have any questions, suggestions, or feedback, you can contact me at:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Email: ranamostafa229@gmail.com
+- LinkedIn: <a href='https://www.linkedin.com/in/rana-shams-4589b5218'>https://www.linkedin.com/in/rana-shams-4589b5218</a>
