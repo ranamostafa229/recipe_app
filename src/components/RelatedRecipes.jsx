@@ -1,4 +1,3 @@
-import React from "react";
 import RecipeCard from "./RecipeCard";
 
 const RelatedRecipes = ({ recipes, id }) => {

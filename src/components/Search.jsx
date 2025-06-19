@@ -11,6 +11,7 @@ const Search = ({
   inputRef,
 }) => {
   const [type, setType] = useState("");
+
   const options = [
     "Biscuits,cookies",
     "Bread",
@@ -30,14 +31,14 @@ const Search = ({
 
   return (
     <div
-      className=" sm:flex:flex-col max-md:flex:flex-col xl:flex  justify-center items-center mt-10 gap-6 
+      className=" sm:flex:flex-col max-md:flex:flex-col xl:flex justify-center items-center mt-10 gap-6 
     max-sm:space-y-4 sm:space-y-4 mx-5 "
     >
       <DropdownMenu
         type={type}
         menu={[
           <div className="flex flex-col gap-1 text-lg  pt-3  ">
-            {options.map((item, index) => (
+            {options.map((item) => (
               <button
                 className="flex hover:border-t-2 hover:border-b-2"
                 onClick={() => {
@@ -57,7 +58,6 @@ const Search = ({
       <SearchForm
         handleInputChange={handleInputChange}
         handleSearchedRecipe={handleSearchedRecipe}
-        handleFilterChange={handleFilterChange}
         value={query}
         setQuery={setQuery}
         inputRef={inputRef}

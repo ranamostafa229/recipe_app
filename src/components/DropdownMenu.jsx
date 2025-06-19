@@ -11,7 +11,6 @@ const DropdownMenu = ({ menu, type }) => {
 
   useEffect(() => {
     setSelected(type);
-    console.log(type);
   }, [type]);
   return (
     <div className="flex mt-3">

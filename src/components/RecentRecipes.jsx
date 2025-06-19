@@ -6,7 +6,7 @@ import RecipeCard from "./RecipeCard";
 import { fetchRecipes } from "../api/api";
 import { Suspense } from "react";
 import Loading from "./Loading";
-// import { useState } from "react";
+
 export function loader() {
   const data = defer({
     recipes: fetchRecipes({ query: "chicken", limit: 6 }),
@@ -16,7 +16,6 @@ export function loader() {
 const RecentRecipes = () => {
   const navigate = useNavigate();
   const dataPromise = useLoaderData();
-
   const renderRecipes = (recipes) => {
     const check = localStorage.getItem("recipes");
     if (check) {
@@ -25,8 +24,13 @@ const RecentRecipes = () => {
       localStorage.setItem("recipes", JSON.stringify(recipes.data?.hits));
       recipes = recipes.data?.hits;
     }
+    console.log(recipes);
+
     return (
-      <section className=" xl:mt-36 md:mt-[500px] max-sm:mt-[700px] min-h-screen   ">
+      <section
+        className=" xl:mt-36 md:mt-[500px] max-sm:mt-[700px] min-h-screen "
+        id="discover"
+      >
         <Background image={BackgroundImage} height={"max-sm:h-96"}>
           <div className="absolute flex flex-col w-full h-full  items-center pt-24 gap-1">
             <h4 className="lg:text-3xl md:text-2xl max-sm:text-2xl text-[#F89223]  font-['Lobster']">
@@ -39,7 +43,7 @@ const RecentRecipes = () => {
               className=" flex flex-wrap max-w-screen-2xl gap-10 justify-center items-center  
            mt-10 mb-10 px-4 "
             >
-              {recipes.map((item) => (
+              {recipes.slice(0, 6).map((item) => (
                 <RecipeCard
                   recipe={item}
                   key={item.recipe.uri?.split("#")[1]}

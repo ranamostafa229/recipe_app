@@ -24,8 +24,10 @@ const Recipes = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const inputRef = useRef(null);
   const dataPromise = useLoaderData();
+  const limit = Number(searchParams.get("limit") || 12);
 
   function handleFilterChange(key, value) {
+    searchParams.set("limit", 12);
     setSearchParams((prevParams) => {
       if (value === null) {
         prevParams.delete(key);
@@ -37,9 +39,7 @@ const Recipes = () => {
   }
 
   const showMore = () => {
-    const limit = searchParams.get("limit") || 12;
     const newLimit = parseInt(limit) + 3;
-    // setLimit(newLimit);
     setSearchParams({
       category: searchParams.get("category") || "chicken",
       limit: newLimit,
@@ -48,7 +48,6 @@ const Recipes = () => {
   const handleChange = (e) => {
     searchParams.set("limit", 12);
     const limit = searchParams.get("limit");
-    // setLimit(12);
     setSearchParams({
       category: e.target.value || "chicken",
       limit: parseInt(limit),
@@ -64,52 +63,30 @@ const Recipes = () => {
     let displayedRecipes = typeFilter
       ? recipes.data?.hits.filter((item) => item.dishType[0] === typeFilter)
       : recipes.data?.hits;
-    // const check = localStorage.getItem("recipes");
-    // if (check) {
-    //   displayedRecipes = JSON.parse(check);
-    // } else {
-    //   localStorage.setItem("recipes", JSON.stringify(recipes.data?.hits));
-    //   displayedRecipes = recipes.data?.hits;
-    // }
+
     return (
       <>
-        <SearchResults recipes={displayedRecipes} />
+        <SearchResults recipes={displayedRecipes.slice(0, limit)} />
         {displayedRecipes.length > 1 && (
           <div
             className={"flex flex-col   top-10 items-center justify-center "}
           >
-            <Button
-              handleClick={showMore}
-              label={"More"}
-              px="px-10"
-              py="py-4"
-              hover={
-                "hover:text-[#F89223] hover:border hover:border-[#F89223] hover:bg-white"
-              }
-            />
+            {limit < displayedRecipes.length && (
+              <Button
+                handleClick={showMore}
+                label={"More"}
+                px="px-10"
+                py="py-4"
+                hover={
+                  "hover:text-[#F89223] hover:border hover:border-[#F89223] hover:bg-white"
+                }
+              />
+            )}
           </div>
         )}
       </>
     );
   };
-  // const handleCategory = (e) => {
-  //   setQuery(e);
-
-  //   handleSearchedCategory();
-  // };
-  // const handleSearchedCategory = () => {
-  //   setLoading(true);
-  //   // getRecipes();
-  // };
-
-  // useEffect(() => {
-  //   // getRecipes();
-
-  // }, [limit, loading]);
-
-  // useEffect(() => {
-  //   loader();
-  // }, [recipes.data?.hits]);
 
   return (
     <section className=" flex flex-col relative h-full ">
@@ -130,7 +107,6 @@ const Recipes = () => {
           handleInputChange={handleChange}
           handleSearchedRecipe={handleSearchedRecipe}
           handleFilterChange={handleFilterChange}
-          // loading={loading}
           query={query}
           setQuery={setQuery}
           value={query}
@@ -145,17 +121,3 @@ const Recipes = () => {
 };
 
 export default Recipes;
-
-// const [recipes, setRecipes] = useState([]);
-// const [limit, setLimit] = useState(12);
-// const [loading, setLoading] = useState(true);
-// const getRecipes = async () => {
-//   try {
-//     const data = await fetchRecipes({ query, limit });
-//     setRecipes(data.data?.hits);
-//   } catch (error) {
-//     console.log(error);
-//   } finally {
-//     setLoading(false);
-//   }
-// };

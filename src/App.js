@@ -56,27 +56,3 @@ function App() {
 }
 
 export default App;
-//   [
-//   {
-//     path: "/",
-//     element: <Laylout />,
-//     children: [
-//       {
-//         path: "/",
-//         element: <Home />,
-//         loader: () => fetchRecipes({ query: "chicken", limit: 6 }),
-//         // index: true,
-//       },
-
-//       {
-//         path: "browse/recipes",
-//         element: <Recipes />,
-//       },
-
-//       {
-//         path: "/:id",
-//         element: <RecipeDetails />,
-//       },
-//     ],
-//   },
-// ]

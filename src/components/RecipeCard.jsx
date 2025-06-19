@@ -5,21 +5,7 @@ import { useNavigate } from "react-router-dom";
 const RecipeCard = ({ recipe }) => {
   const id = recipe?.recipe.uri?.split("#")[1];
   const navigate = useNavigate();
-  // let savedPosition = 0;
-
-  // function savePosition() {
-  //   savedPosition = window.scrollY;
-  // }
-
-  // function scrollToTop() {
-  //   // savePosition();
-  //   // window.scrollTo(0, 0);
-  //   window.scrollTo(0, savedPosition);
-  // }
-
-  // function scrollToSavedPosition() {
-  //   window.scrollTo(0, savedPosition);
-  // }
+  console.log(recipe?.recipe.uri?.split("#")[1]);
   return (
     <div
       className="flex flex-col border rounded-xl max-sm:w-80 lg:w-96

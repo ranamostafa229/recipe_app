@@ -1,11 +1,15 @@
-import { useNavigate } from "react-router-dom";
 import HomeBt from "../images/home-bottom.jpg";
 import ImagesCard from "../images/images.jpg";
 import Background from "./Background";
 import Button from "./Button";
 
 const Intro = () => {
-  const navigate = useNavigate();
+  const scrollToSection = () => {
+    const section = document.getElementById("discover");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section className="w-full  justify-center items-center mb-5 ">
       <Background image={HomeBt}>
@@ -15,7 +19,7 @@ const Intro = () => {
         >
           <img
             src={ImagesCard}
-            alt=""
+            alt="Thatix Introduction "
             className="2xl:w-[500px] xl:w-[450px] lg:w-[400px] md:w-[400px]   lg:mx-5 md:mx-5 
             max-sm:w-[250px] max-sm:mx-auto max-sm:mb-4 "
           />
@@ -33,10 +37,7 @@ const Intro = () => {
               injected humour, words which don’t look even slightly believable.
               If you are going to use a passage you need to be sure text.
             </p>
-            <Button
-              label={"Discover More"}
-              handleClick={() => navigate("#discover")}
-            />
+            <Button label={"Discover More"} handleClick={scrollToSection} />
           </div>
         </div>
       </Background>

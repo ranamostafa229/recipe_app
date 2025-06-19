@@ -4,7 +4,6 @@ import { BsSearch } from "react-icons/bs";
 const SearchForm = ({
   handleSearchedRecipe,
   handleInputChange,
-  handleFilterChange,
   value,
   query,
   setQuery,
